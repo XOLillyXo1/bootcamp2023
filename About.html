@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/Logo.PNG" width="200">
+                
+        <ul>
+            
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+            </nav>
+        </header>
+        <main id="aboutmain"> 
+            <section class="aboutsection">
+        <div class="aboutrow">        
+        <div class="aboutcol1">
+             <img src="images/about me (2).jpg" height="300px">
+        </div>
+        <div class="aboutcol2">
+            <h1 class="about-title">About Me</h1>    
+            <p>I am studying at the Orchids International school in my city. 
+                I am presently in class 6th.I feel happy to be a part of this great
+                school with the good friends, helpful and loving teacher and sound school administration.I have extraordinary skills in 
+                some subjects whereas I am very weak in the few</p>
+        
+        
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('name')">Name</p>
+            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+        </div>
+        <div class="tab-contents active-tab" id="name">
+            <ul>
+                <li><span>Name:</span>Anagha</li>
+               <li><span>Class:</span>6B</li>
+                <li><span>Roll:</span>1</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="hobbies">
+            <ul>
+                <li><span> Skill : </span> I Love Code, Draw, Play Sports</li>
+                <br><li><span>  Drawing : </span> I love Drawing Because It gives me peace and creative ideas</li>
+                <li><span>  Coding : </span> I love Coding Because It Helps Me Understand The Coding Languages</li>
+                <li ><span>  Playing Sports : </span> I love Playing Sports As It Helps Me To Relax</li>
+            </ul>
+        </div>
+        </div>
+        </section>
+        </main>
+        <footer class="copyright">
+            <p>Copyright &copy; Pranav. Made with <i class="fa-solid fa-heart"></i> by Orchids International School</p>
+           </footer>
+        
+           <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname)
+{
+ for(tablink of tablinks)
+ {
+     tablink.classList.remove("active-link");
+ }
+
+ for(tabcontent of tabcontents)
+ {
+     tabcontent.classList.remove("active-tab");
+
+ }
+ event.currentTarget.classList.add("active-link");
+ document.getElementById(tabname).classList.add("active-tab");
+} 
+     </script>
+        </body>
+        
+        </html>
